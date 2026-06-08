@@ -1,0 +1,113 @@
+/* ===========================================================
+   Opere BAC — flashcards
+   (progress-bar și result/ring sunt în components.css)
+   =========================================================== */
+
+.fc-wrap {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+}
+.fc-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--muted);
+  margin-bottom: 18px;
+}
+.flashcard {
+  perspective: 1600px;
+  height: 340px;
+  margin-bottom: 22px;
+  cursor: pointer;
+}
+.flashcard .inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.55s cubic-bezier(0.4, 0.2, 0.2, 1);
+  transform-style: preserve-3d;
+}
+.flashcard.flipped .inner {
+  transform: rotateY(180deg);
+}
+.fc-face {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  border-radius: 20px;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+.fc-front {
+  background: var(--card);
+}
+.fc-front .tag {
+  color: var(--accent-2);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.fc-front .term {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
+.fc-front .flip-hint {
+  color: var(--muted-2);
+  font-size: 0.85rem;
+  margin-top: 8px;
+}
+.fc-back {
+  background: var(--card-2);
+  transform: rotateY(180deg);
+}
+.fc-back .tag {
+  color: var(--accent-3);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.fc-back .def {
+  font-size: 1.08rem;
+  color: var(--text);
+  overflow-y: auto;
+  max-height: 230px;
+}
+.fc-controls {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.fc-controls .know {
+  border-color: var(--good);
+  color: var(--good);
+}
+.fc-controls .know:hover {
+  background: var(--good-bg);
+}
+.fc-controls .again {
+  border-color: var(--warn);
+  color: var(--warn);
+}
+.fc-controls .again:hover {
+  background: rgba(255, 207, 92, 0.12);
+}
+.icon-btn {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 1.3rem;
+  padding: 0;
+}

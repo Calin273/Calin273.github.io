@@ -1,0 +1,187 @@
+/* ===========================================================
+   Opere BAC — base: variabile temă (dark + light), reset,
+   body, scrollbar, container, animații, responsive.
+   Toată logica de teme trăiește aici.
+   =========================================================== */
+
+/* ----- Temă întunecată (implicită) ----- */
+:root {
+  --bg: #0d0f15;
+  --bg-2: #12151f;
+  --card: #181c28;
+  --card-2: #1f2433;
+  --line: #2a3042;
+  --line-2: #3a425c; /* bordură accentuată / hover */
+  --text: #e8ebf2;
+  --muted: #9aa3b8;
+  --muted-2: #e5e8ec;
+  --accent: #7c5cff;
+  --accent-2: #36d6c3;
+  --accent-3: #ff5c9d;
+  --good: #2fd36a;
+  --good-bg: rgba(47, 211, 106, 0.13);
+  --bad: #ff5a6e;
+  --bad-bg: rgba(255, 90, 110, 0.13);
+  --warn: #ffcf5c;
+  /* badge-uri tip operă */
+  --tip-poezie-bg: rgba(124, 92, 255, 0.16);
+  --tip-poezie-fg: #b3a2ff;
+  --tip-proza-bg: rgba(54, 214, 195, 0.16);
+  --tip-proza-fg: #6fe6d6;
+  --tip-drama-bg: rgba(255, 92, 157, 0.16);
+  --tip-drama-fg: #ff9cc2;
+  --radius: 16px;
+  --shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
+  --grad: linear-gradient(
+    120deg,
+    var(--accent),
+    var(--accent-3) 55%,
+    var(--accent-2)
+  );
+}
+
+/* ----- Temă luminoasă ----- */
+[data-theme="light"] {
+  --bg: #f4f6fc;
+  --bg-2: #eaeef7;
+  --card: #ffffff;
+  --card-2: #eef2fb;
+  --line: #dde3ee;
+  --line-2: #c2cad9;
+  --text: #1b2030;
+  --muted: #586074;
+  --muted-2: #8b93a6;
+  --accent: #6a44ff;
+  --accent-2: #0c9f90;
+  --accent-3: #e23f86;
+  --good: #16a34a;
+  --good-bg: rgba(22, 163, 74, 0.13);
+  --bad: #e0344b;
+  --bad-bg: rgba(224, 52, 75, 0.12);
+  --warn: #c98a00;
+  --tip-poezie-bg: rgba(106, 68, 255, 0.12);
+  --tip-poezie-fg: #5b3fd6;
+  --tip-proza-bg: rgba(12, 159, 144, 0.14);
+  --tip-proza-fg: #0c7e72;
+  --tip-drama-bg: rgba(226, 63, 134, 0.12);
+  --tip-drama-fg: #c02e6e;
+  --shadow: 0 12px 30px rgba(30, 40, 80, 0.12);
+}
+[data-theme="light"] body {
+  background:
+    radial-gradient(
+      1200px 700px at 80% -10%,
+      rgba(124, 92, 255, 0.1),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 600px at -10% 10%,
+      rgba(12, 159, 144, 0.08),
+      transparent 55%
+    ),
+    var(--bg);
+}
+[data-theme="light"] .nav {
+  background: rgba(255, 255, 255, 0.82);
+}
+
+/* ----- Reset & bază ----- */
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  font-family:
+    "Segoe UI",
+    system-ui,
+    -apple-system,
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+  background:
+    radial-gradient(
+      1200px 700px at 80% -10%,
+      rgba(124, 92, 255, 0.18),
+      transparent 60%
+    ),
+    radial-gradient(
+      900px 600px at -10% 10%,
+      rgba(54, 214, 195, 0.12),
+      transparent 55%
+    ),
+    var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  min-height: 100vh;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+::selection {
+  background: rgba(124, 92, 255, 0.4);
+}
+
+/* ----- Scrollbar ----- */
+::-webkit-scrollbar {
+  width: 11px;
+  height: 11px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--line);
+  border-radius: 20px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--line-2);
+}
+
+/* ----- Layout container ----- */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* ----- Animații ----- */
+@keyframes fade {
+  from {
+    opacity: 0;
+    transform: translateY(6px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.view {
+  animation: fade 0.25s;
+}
+
+/* ----- Responsive (cross-cutting) ----- */
+@media (max-width: 640px) {
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .nav-links a {
+    padding: 7px 10px;
+    font-size: 0.88rem;
+  }
+  .brand span.full {
+    display: none;
+  }
+  .q-text {
+    font-size: 1.15rem;
+  }
+  .flashcard {
+    height: 300px;
+  }
+}

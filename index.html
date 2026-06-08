@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Opere BAC — învață-le ușor</title>
+  <link rel="stylesheet" href="css/base.css" />
+  <link rel="stylesheet" href="css/layout.css" />
+  <link rel="stylesheet" href="css/components.css" />
+  <link rel="stylesheet" href="css/opere.css" />
+  <link rel="stylesheet" href="css/quiz.css" />
+  <link rel="stylesheet" href="css/flashcards.css" />
+  <link rel="stylesheet" href="css/chronology.css" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>" />
+  <script>try{document.documentElement.setAttribute('data-theme',localStorage.getItem('opereBAC.theme')||'dark');}catch(e){document.documentElement.setAttribute('data-theme','dark');}</script>
+</head>
+<body>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#/acasa" class="brand">
+        <span class="logo">📚</span>
+        <span>Opere<b>BAC</b></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#/acasa" data-route="acasa">Acasă</a>
+        <a href="#/opere" data-route="opere">Opere</a>
+        <a href="#/quiz" data-route="quiz">Quiz</a>
+        <a href="#/flashcards" data-route="flashcards">Flashcards</a>
+      </nav>
+      <button id="themeToggle" class="theme-toggle" type="button" title="Schimbă tema (luminos/întunecat)">🌙</button>
+    </div>
+  </header>
+
+  <main id="app" class="container"></main>
+
+  <footer class="footer">
+    <div class="container">
+      Făcut pentru BAC · analizele tale, transformate în quiz-uri și flashcards · progresul se salvează local în browser
+    </div>
+  </footer>
+
+  <!-- Registru de date -->
+  <script src="js/data-index.js"></script>
+
+  <!-- Operele (câte un fișier per operă) -->
+  <script src="data/01-plumb.js"></script>
+  <script src="data/02-testament.js"></script>
+  <script src="data/03-eu-nu-strivesc.js"></script>
+  <script src="data/04-riga-crypto.js"></script>
+  <script src="data/05-luceafarul.js"></script>
+  <script src="data/06-leoaica-tanara.js"></script>
+  <script src="data/07-aci-sosi-pe-vremuri.js"></script>
+  <script src="data/08-ion.js"></script>
+  <script src="data/09-baltagul.js"></script>
+  <script src="data/10-enigma-otiliei.js"></script>
+  <script src="data/11-moara-cu-noroc.js"></script>
+  <script src="data/12-ultima-noapte.js"></script>
+  <script src="data/13-padurea-spanzuratilor.js"></script>
+  <script src="data/14-harap-alb.js"></script>
+  <script src="data/15-alexandru-lapusneanul.js"></script>
+  <script src="data/16-o-scrisoare-pierduta.js"></script>
+  <script src="data/17-iona.js"></script>
+  <script src="data/18-morometii.js"></script>
+
+  <!-- Fundații (utilitare + stare) -->
+  <script src="js/utils.js"></script>
+  <script src="js/store.js"></script>
+
+  <!-- UI (componente + pagini) -->
+  <script src="js/components.js"></script>
+  <script src="js/views.js"></script>
+
+  <!-- Motoare -->
+  <script src="js/quiz.js"></script>
+  <script src="js/flashcards.js"></script>
+
+  <!-- Componente opționale -->
+  <script src="js/chronology.js"></script>
+
+  <!-- Router + bootstrap (ultimul) -->
+  <script src="js/router.js"></script>
+</body>
+</html>

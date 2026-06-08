@@ -1,0 +1,165 @@
+/* ===========================================================
+   Opere BAC — opere: grilă carduri, card operă,
+   pagina operă + analiză, picker (selectare operă)
+   =========================================================== */
+
+/* ---------- Cards grid ---------- */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 16px;
+}
+.opera-card {
+  position: relative;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 20px;
+  overflow: hidden;
+  transition: 0.2s;
+  display: flex;
+  flex-direction: column;
+  min-height: 168px;
+}
+.opera-card::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 4px;
+  background: var(--grad);
+  opacity: 0.9;
+}
+.opera-card:hover {
+  transform: translateY(-4px);
+  border-color: var(--line-2);
+  box-shadow: var(--shadow);
+}
+.opera-card .tip-badge {
+  align-self: flex-start;
+}
+.opera-card h3 {
+  margin: 12px 0 4px;
+  font-size: 1.18rem;
+  font-weight: 800;
+  line-height: 1.25;
+}
+.opera-card .autor {
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+.opera-card .curent {
+  margin-top: auto;
+  padding-top: 14px;
+  color: var(--accent-2);
+  font-size: 0.82rem;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+}
+.opera-card .done-dot {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--good-bg);
+  color: var(--good);
+  display: none;
+  place-items: center;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+.opera-card.quizzed .done-dot {
+  display: grid;
+}
+
+/* ---------- Pagina operă ---------- */
+.opera-page {
+  padding: 30px 0 60px;
+}
+.opera-head {
+  border-bottom: 1px solid var(--line);
+  padding-bottom: 22px;
+  margin-bottom: 8px;
+}
+.opera-head h1 {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  margin: 12px 0 6px;
+  font-weight: 800;
+}
+.opera-head .autor {
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+.opera-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  margin: 20px 0 30px;
+}
+.analiza {
+  font-size: 1.05rem;
+}
+.analiza p {
+  margin: 0 0 16px;
+  color: var(--text);
+}
+.analiza p:first-of-type::first-letter {
+  font-size: 3.1rem;
+  font-weight: 800;
+  float: left;
+  line-height: 0.8;
+  padding: 6px 12px 0 0;
+  background: var(--grad);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* ---------- Picker (quiz/flashcards selectare operă) ---------- */
+.picker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 12px;
+}
+.pick {
+  text-align: left;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 16px 18px;
+  transition: 0.18s;
+  color: var(--text);
+}
+.pick:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow);
+}
+.pick h4 {
+  margin: 8px 0 3px;
+  font-size: 1.05rem;
+}
+.pick .autor {
+  color: var(--muted);
+  font-size: 0.86rem;
+}
+.pick .meta {
+  color: var(--muted-2);
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+.pick.mix {
+  background: var(--grad);
+  border: none;
+  color: #fff;
+}
+.pick.mix h4,
+.pick.mix .autor,
+.pick.mix .meta {
+  color: #fff;
+}
+.pick.mix .autor,
+.pick.mix .meta {
+  opacity: 0.9;
+}

@@ -1,0 +1,117 @@
+/* ===========================================================
+   Opere BAC — quiz grilă
+   (progress-bar și result/ring sunt în components.css)
+   =========================================================== */
+
+.quiz-wrap {
+  max-width: 720px;
+  margin: 0 auto;
+}
+.quiz-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+  color: var(--muted);
+}
+.q-num {
+  color: var(--accent-2);
+  font-weight: 700;
+  font-size: 0.9rem;
+  letter-spacing: 0.5px;
+}
+.q-src {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 12px;
+  border-radius: 999px;
+  background: var(--card-2);
+  border: 1px solid var(--line);
+  color: var(--accent);
+  font-weight: 700;
+  font-size: 0.82rem;
+}
+.q-text {
+  font-size: 1.32rem;
+  font-weight: 700;
+  margin: 6px 0 24px;
+  line-height: 1.4;
+}
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.opt {
+  text-align: left;
+  background: var(--card);
+  border: 1.5px solid var(--line);
+  border-radius: 13px;
+  padding: 15px 18px;
+  color: var(--text);
+  font-size: 1rem;
+  transition: 0.15s;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+.opt:hover:not(.locked) {
+  border-color: var(--accent);
+  transform: translateX(3px);
+}
+.opt .key {
+  flex: none;
+  width: 26px;
+  height: 26px;
+  border-radius: 8px;
+  background: var(--card-2);
+  color: var(--muted);
+  display: grid;
+  place-items: center;
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+.opt.correct {
+  border-color: var(--good);
+  background: var(--good-bg);
+}
+.opt.correct .key {
+  background: var(--good);
+  color: #06210f;
+}
+.opt.wrong {
+  border-color: var(--bad);
+  background: var(--bad-bg);
+}
+.opt.wrong .key {
+  background: var(--bad);
+  color: #2b0509;
+}
+.opt.locked {
+  cursor: default;
+}
+.opt.dim {
+  opacity: 0.55;
+}
+.explica {
+  margin-top: 18px;
+  padding: 15px 18px;
+  border-radius: 13px;
+  background: var(--bg-2);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent-2);
+  color: var(--muted);
+  display: none;
+}
+.explica.show {
+  display: block;
+  animation: fade 0.25s;
+}
+.explica b {
+  color: var(--text);
+}
+.quiz-nav {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 24px;
+}
