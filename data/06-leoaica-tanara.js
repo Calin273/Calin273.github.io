@@ -43,7 +43,7 @@ window.OPERE.push({
       variante: ["Trei", "Două", "Patru", "Cinci"], corect: 0,
       explicatie: "Trei secvențe: invazia/șocul iubirii, planul oniric (recompunerea cosmică) și metamorfoza eului." },
     { intrebare: "Ce se întâmplă cu universul în a doua secvență?",
-      variante: [“Se recompune metaforic, după modelul genezei („natura se făcu un cerc, de-a dura”)”, “Se distruge complet și se destramă în haos”, “Rămâne neschimbat și indiferent la iubire”, “Se transformă treptat într-un spațiu urban”], corect: 0,
+      variante: ["Se recompune metaforic, după modelul genezei („natura se făcu un cerc, de-a dura\")", "Se distruge complet și se destramă în haos", "Rămâne neschimbat și indiferent la iubire", "Se transformă treptat într-un spațiu urban"], corect: 0,
       explicatie: "Universul se reorganizează circular în jurul eului devenit nucleu; cercul = perfecțiune și totalitate, dar și limită." },
     { intrebare: "Ce figură de stil sunt „tâmpla”, „sprânceana”, „bărbia” din final?",
       variante: ["Metonimii", "Hiperbole", "Personificări", "Comparații"], corect: 0,

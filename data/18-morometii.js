@@ -47,13 +47,13 @@ window.OPERE.push({
       variante: ["Siliștea-Gumești, Câmpia Dunării", "Câmpulung Muscel", "Iași, Moldova", "Cluj, Transilvania"], corect: 0,
       explicatie: "Acțiunea se petrece în satul Siliștea-Gumești din Câmpia Dunării, spațiu real, identificabil, specific creației lui Marin Preda." },
     { intrebare: "Ce tehnică narativă folosește Marin Preda în „Moromeții\"?",
-      variante: ["Narator omniscient la persoana a III-a cu perspectivă multiplă", "Narator protagonist la persoana I", "Flux al conștiinței", "Narator-martor exterior"], corect: 0,
+      variante: ["Narator omniscient la persoana a III-a cu perspectivă multiplă", "Narator protagonist autodiegetic la persoana I", "Flux al conștiinței cu analepse și prolepse", "Narator-martor exterior, implicat și vizibil"], corect: 0,
       explicatie: "Preda folosește un narator omniscient la persoana a III-a, cu perspectivă multiplă — același eveniment văzut diferit de personaje." },
     { intrebare: "Ce rol joacă personajul Guica în roman?",
       variante: ["Alimentează conflictele și dezintegrarea familiei", "Reprezintă echilibrul moral al familiei", "Este vocea înțelepciunii tradiționale", "Este mama adoptivă a lui Niculae"], corect: 0,
       explicatie: "Guica, sora lui Ilie Moromete, este personajul care alimentează disensiunile familiale, reprezentând principiul distructiv." },
     { intrebare: "Ce semnificație are scena cinei din roman?",
-      variante: ["Dezvăluie toate tensiunile familiale printr-un dialog cu ironie subtilă", "Marchează reconcilierea familiei Moromete", "Este momentul în care Ilie vinde pământul", "Reprezintă sosirea colectivizării în sat"], corect: 0,
+      variante: ["Dezvăluie toate tensiunile familiale printr-un dialog cu ironie subtilă", "Marchează momentul reconcilierii totale a familiei Moromete", "Este momentul decisiv în care Ilie cedează și vinde pământul", "Reprezintă sosirea și impunerea colectivizării în sat"], corect: 0,
       explicatie: "Scena cinei condensează relațiile de forță, afecțiunile ascunse și prăpastia dintre generații prin dialogul ironic condus de Ilie Moromete." }
   ],
   flashcards: [

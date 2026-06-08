@@ -40,7 +40,7 @@ window.OPERE.push({
       variante: ["Sacrul și riturile de trecere (nunta și moartea)", "Începutul zilei", "Chemarea la luptă", "Sărbătoarea recoltei"], corect: 0,
       explicatie: "Clopotul e mesager al sacrului, marcând pragurile existenței (nunta, moartea) și integrând efemerul în ritmul cosmic." },
     { intrebare: "Cum a definit George Călinescu construcția poemului?",
-      variante: [“„Indivizibilă paralelă între două veacuri””, “„Poem al dorului și al tristeții””, “„Basm al ființei și al uitării””, “„Industrie genială a cuvântului””], corect: 0,
+      variante: ["„Indivizibilă paralelă între două veacuri”", "„Poem al dorului și al tristeții”", "„Basm al ființei și al uitării”", "„Industrie genială a cuvântului”"], corect: 0,
       explicatie: "Călinescu vede o succesiune de tablouri în care, deși actorii se schimbă, tiparul existențial rămâne neschimbat." },
     { intrebare: "Din ce autori romantici citește cuplul din trecut (bunicii)?",
       variante: ["Lamartine și Heliade-Rădulescu", "Eminescu și Coșbuc", "Baudelaire și Rimbaud", "Goethe și Schiller"], corect: 0,

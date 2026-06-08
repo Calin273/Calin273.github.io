@@ -49,7 +49,7 @@ window.OPERE.push({
       variante: ["Relația dintre Eros și Thanatos (iubire și moarte)", "Relația dintre om și natură", "Relația dintre trecut și viitor", "Relația dintre individ și societate"], corect: 0,
       explicatie: "Strofa a doua aduce planul interior, marcat de relația Eros–Thanatos: „Dormea întors amorul meu de plumb”." },
     { intrebare: "Cum explică Lucian Blaga epitetul „întors” din „amorul... dormea întors”?",
-      variante: [“„A fi întors înseamnă a fi cu faţa spre moarte””, “Întoarcerea iubitei în căminul domestic”, “Trecerea ireversibilă a timpului”, “Revenirea triumfătoare la bucuria vieții”], corect: 0,
+      variante: ["„A fi întors înseamnă a fi cu faţa spre moarte”", "Întoarcerea iubitei în căminul domestic", "Trecerea ireversibilă a timpului", "Revenirea triumfătoare la bucuria vieții"], corect: 0,
       explicatie: "Blaga: „A fi întors înseamnă a fi cu faţa spre moarte” – amorul este contaminat de moarte." },
     { intrebare: "Ce timp verbal domină poezia, sugerând durată și monotonie?",
       variante: ["Imperfectul", "Prezentul", "Perfectul simplu", "Viitorul"], corect: 0,

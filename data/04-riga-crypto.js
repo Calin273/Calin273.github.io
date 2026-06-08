@@ -41,7 +41,7 @@ window.OPERE.push({
       variante: ["Baladă", "Sonet", "Elegie", "Imn"], corect: 0,
       explicatie: "Subtitlul „baladă” marchează caracterul epico-liric și narativ al textului, cu aspect de cântec medieval." },
     { intrebare: "Cum a numit Nicolae Manolescu acest poem, prin raportare la Eminescu?",
-      variante: [“„Un Luceafăr cu rolurile inversate””, “„Un Luceafăr pierdut în absolut””, “„O Doină modernă și dureroasă””, “„Un Glossă întors pe dos””], corect: 0,
+      variante: ["„Un Luceafăr cu rolurile inversate”", "„Un Luceafăr pierdut în absolut”", "„O Doină modernă și dureroasă”", "„Un Glossă întors pe dos”"], corect: 0,
       explicatie: "Manolescu îl numește „un Luceafăr cu rolurile inversate” – un „Luceafăr întors”, cu genurile/rolurile schimbate." },
     { intrebare: "Care este tema poemului?",
       variante: ["Iubirea ca atracție și cale de cunoaștere între lumi diferite", "Lupta pentru putere politică și dominație socială", "Iubirea de patrie și dorința de libertate națională", "Condiția artistului inadaptat în societatea modernă"], corect: 0,

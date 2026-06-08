@@ -64,7 +64,7 @@ window.OPERE.push({
       variante: ["Ela", "Otilia", "Ana", "Vitoria"], corect: 0,
       explicatie: "Ela este soția a cărei presupusă infidelitate declanșează gelozia analitică a lui Ștefan." },
     { intrebare: "Ce declanșează memoria involuntară la Camil Petrescu (spre deosebire de Proust)?",
-      variante: ["O confruntare / dezbatere de idei", "O senzație (gust, miros)", "Un vis", "O scrisoare"], corect: 0,
+      variante: ["O confruntare / dezbatere de idei", "O senzație puternică de gust sau miros", "Un vis recurent și tulburător", "O scrisoare primită de la iubită"], corect: 0,
       explicatie: "La Proust memoria e activată de o senzație; la Camil Petrescu, de o confruntare de idei (ex. discuția de la popotă)." },
     { intrebare: "Ce concepție despre iubire are Gheorghidiu?",
       variante: ["„Monodeismul” (concentrarea existenței asupra unei singure idei)", "Iubirea ca joc", "Iubirea pragmatică", "Iubirea platonică pură"], corect: 0,

@@ -53,7 +53,7 @@ window.OPERE.push({
       variante: ["Mitul biblic al prorocului Iona (înghițit de chit)", "Mitul lui Sisif", "Mitul lui Prometeu", "Mitul Meșterului Manole"], corect: 0,
       explicatie: "Sorescu golește mitul biblic de componenta religioasă, transformându-l în metaforă a însingurării metafizice a omului modern." },
     { intrebare: "Care este tema piesei?",
-      variante: [“Singurătatea / condiția umană („un om singur, nemaipomenit de singur”)”, “Iubirea și împlinirea sentimentală”, “Lupta pentru putere și dominație”, “Trecerea implacabilă a timpului”], corect: 0,
+      variante: ["Singurătatea / condiția umană („un om singur, nemaipomenit de singur\")", "Iubirea și împlinirea sentimentală", "Lupta pentru putere și dominație", "Trecerea implacabilă a timpului"], corect: 0,
       explicatie: "Sorescu însuși declară că a vrut să scrie despre „un om singur”; piesa e o parabolă a singurătății și a căutării identității." },
     { intrebare: "Ce tehnică dramatică folosește piesa, în absența unui antagonist real?",
       variante: ["Monologul dialogat (Iona se dedublează)", "Dialogul clasic", "Corul antic", "Romanul epistolar"], corect: 0,
@@ -65,7 +65,7 @@ window.OPERE.push({
       variante: ["„Mi-am adus aminte: Iona! Eu sunt Iona!”", "„Mor ca un câine!”", "„Curat constituțional!”", "„Apa trece, pietrele rămân”"], corect: 0,
       explicatie: "Momentul anamnezei – regăsirea identității – transformă pescarul ghinionist într-un om iluminat." },
     { intrebare: "Ce semnifică gestul final al spintecării propriei burți?",
-      variante: ["Eliberarea spiritului din captivitatea materiei (regăsirea sinelui)", "O sinucidere din disperare", "O pedeapsă divină", "Un act de răzbunare"], corect: 0,
+      variante: ["Eliberarea spiritului din captivitatea materiei (regăsirea sinelui)", "O sinucidere cauzată de disperarea și neputința sa", "O pedeapsă divină pentru fuga de la misiunea sa", "Un act de răzbunare împotriva forțelor absurde"], corect: 0,
       explicatie: "Nu e o sinucidere camusiană, ci o victorie a lucidității: salvarea condiției umane se află „numai prin sine”." },
     { intrebare: "Cum este reprezentată marea în primul tablou?",
       variante: ["Prin niște cercuri desenate cu creta", "Printr-un decor realist", "Printr-o proiecție video", "Printr-un acvariu"], corect: 0,
@@ -78,7 +78,7 @@ window.OPERE.push({
       variante: ["Un „șir nesfârșit de burți”", "Un paradis", "Un labirint de oglinzi", "O mare deschisă"], corect: 0,
       explicatie: "Realitatea se dovedește un șir nesfârșit de burți de pești – metaforă a captivității succesive și a absurdului existențial." },
     { intrebare: "Cărui mit filosofic trimite ipostaza finală a ascetului pe plajă?",
-      variante: ["Mitul peșterii al lui Platon", "Mitul lui Sisif", "Mitul lui Orfeu", "Mitul lui Narcis"], corect: 0,
+      variante: ["Mitul peșterii al lui Platon", "Mitul lui Sisif și condiția absurdă", "Mitul lui Orfeu din lumea de jos", "Mitul lui Narcis și iubirea de sine"], corect: 0,
       explicatie: "Ascetul de pe plajă trimite la mitul peșterii platonician – ieșirea spre lumină și adevăr, clipa supremă a lucidității." }
   ],
   flashcards: [

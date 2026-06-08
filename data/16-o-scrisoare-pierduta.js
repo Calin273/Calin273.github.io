@@ -55,7 +55,7 @@ window.OPERE.push({
       variante: ["Degradarea vieții publice și de familie în campanie electorală", "Iubirea romantică și visul unui cuplu fericit", "Lupta dramatică cu forțele ostile ale naturii", "Condiția tragică a artistului neînțeles de societate"], corect: 0,
       explicatie: "Caragiale satirizează lupta pentru putere și falsitatea relațiilor, oferind o „panoramă a moravurilor” burgheziei provinciale." },
     { intrebare: "Ce rol are scrisoarea în structura piesei?",
-      variante: ["De „suprapersonaj” – obiectul în jurul căruia gravitează conflictul", "De simplu accesoriu", "De simbol al iubirii pure", "De document istoric"], corect: 0,
+      variante: ["De „suprapersonaj\" – obiectul în jurul căruia gravitează conflictul", "De simplu accesoriu vestimentar fără semnificație", "De simbol etern al iubirii pure și neprihănite", "De document istoric cu valoare cultural-patrimonială"], corect: 0,
       explicatie: "Scrisoarea de amor capătă funcție actanțială, devenind instrument de șantaj politic ce dictează ritmul acțiunii." },
     { intrebare: "Ce tip uman reprezintă Nae Cațavencu?",
       variante: ["Demagogul (ambițiosul)", "Încornoratul", "Servilul", "Senilul"], corect: 0,
@@ -76,7 +76,7 @@ window.OPERE.push({
       variante: ["Teoria „formelor fără fond”", "Teoria „artei pentru artă”", "Teoria imitației", "Teoria geniului"], corect: 0,
       explicatie: "Piesa demască instituții și principii occidentale mimate, fără un fond moral real – „formele fără fond”." },
     { intrebare: "Cu ce nuvelă/autor are filiație literară titlul?",
-      variante: ["„Scrisoarea furată” de Edgar Allan Poe", "„Hamlet” de Shakespeare", "„Moș Goriot” de Balzac", "„Greața” de Sartre"], corect: 0,
+      variante: ["„Scrisoarea furată\" de Edgar Allan Poe", "„Hamlet, prinț al Danemarcei\" de Shakespeare", "„Moș Goriot\" de Honoré de Balzac", "„Greața\" de Jean-Paul Sartre"], corect: 0,
       explicatie: "Titlul trimite la „Scrisoarea furată” de E.A. Poe, autor admirat de Caragiale; aici scrisoarea devine instrument de șantaj politic." }
 ,
     { intrebare: "Din câte acte este alcătuită comedia?",
