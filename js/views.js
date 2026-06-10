@@ -94,9 +94,17 @@
 
     const o = byId(id);
     if (!o) return notFound();
-    const paras = (o.analiza || []).map(p => `<p>${esc(p)}</p>`).join("");
+    const parasLunga = (o.analiza || []).map(p => `<p>${esc(p)}</p>`).join("");
+    const hasShort = o.analizaScurta && o.analizaScurta.length > 0;
+    const parasScurta = hasShort ? o.analizaScurta.map(p => `<p>${esc(p)}</p>`).join("") : "";
     const q = Store.getQuiz(o.id);
-    return h(`<div class="view opera-page">
+    const toggleHTML = hasShort
+      ? `<div class="analiza-toggle chips">
+           <button class="chip active" data-v="lunga">Variantă lungă</button>
+           <button class="chip" data-v="scurta">Variantă scurtă</button>
+         </div>`
+      : "";
+    const wrap = h(`<div class="view opera-page">
       <a class="back-link" href="#/opere">← Înapoi la opere</a>
       <div class="opera-head">
         ${badge(o.tip)}
@@ -107,8 +115,20 @@
         <a class="btn primary" href="#/quiz/${o.id}">✅ Quiz pe această operă ${q ? "· record " + q.best + "/" + q.total : ""}</a>
         <a class="btn" href="#/flashcards/${o.id}">🎴 Flashcards (${o.flashcards ? o.flashcards.length : 0})</a>
       </div>
-      <article class="analiza">${paras || "<p>(analiză indisponibilă)</p>"}</article>
+      ${toggleHTML}
+      <article class="analiza">${parasLunga || "<p>(analiză indisponibilă)</p>"}</article>
     </div>`);
+    if (hasShort) {
+      const article = wrap.querySelector(".analiza");
+      wrap.querySelector(".analiza-toggle").addEventListener("click", e => {
+        const btn = e.target.closest(".chip");
+        if (!btn) return;
+        wrap.querySelectorAll(".analiza-toggle .chip").forEach(c => c.classList.remove("active"));
+        btn.classList.add("active");
+        article.innerHTML = btn.dataset.v === "scurta" ? parasScurta : parasLunga;
+      });
+    }
+    return wrap;
   }
 
   function viewQuizPicker() {

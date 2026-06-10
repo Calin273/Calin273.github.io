@@ -55,6 +55,15 @@
   font-weight: 600;
   letter-spacing: 0.3px;
 }
+.bac-star {
+  position: absolute;
+  top: 14px;
+  right: 44px;
+  font-size: 1rem;
+  color: #f59e0b;
+  cursor: default;
+  line-height: 1;
+}
 .opera-card .done-dot {
   position: absolute;
   top: 16px;
@@ -96,6 +105,9 @@
   gap: 10px;
   flex-wrap: wrap;
   margin: 20px 0 30px;
+}
+.analiza-toggle {
+  margin: 0 0 20px;
 }
 .analiza {
   font-size: 1.05rem;

@@ -16,9 +16,11 @@
     const { esc } = window.AppUtils;
     const q = window.Store.getQuiz(o.id);
     const done = q ? "quizzed" : "";
+    const star = o.bacProb ? `<span class="bac-star" title="Șanse mari să pice la BAC">★</span>` : "";
     return `
       <a class="opera-card ${done}" href="#/opera/${o.id}">
         <span class="done-dot" title="Quiz dat: ${q ? q.best + "/" + q.total : ""}">✓</span>
+        ${star}
         ${badge(o.tip)}
         <h3>${esc(o.titlu)}</h3>
         <div class="autor">${esc(o.autor)}</div>
